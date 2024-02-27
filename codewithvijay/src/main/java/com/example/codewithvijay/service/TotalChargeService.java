@@ -33,16 +33,16 @@ public class TotalChargeService {
 
     private int getTotalValue(String toCity, int weight) {
         if (toCity == null) {
-            // Handle the case where toCity is null, perhaps by throwing an exception or returning a default value
-            return 0; // For example, return 0 as the default value
+            
+            return 0; 
         }
 
-        // Check if the provided city exists in the map
+       
         if (cityValues.containsKey(toCity.toLowerCase())) {
-            // Calculate total by multiplying city value with weight
+            
             return cityValues.get(toCity.toLowerCase()) * weight;
         } else {
-            // If city is not found in the map, return default value
+           
             return 0;
         }
     }

@@ -14,7 +14,6 @@ const TotalChargeForm = () => {
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
   useEffect(() => {
-    // Fetch to cities from backend when component mounts
     fetchToCities();
   }, []);
 

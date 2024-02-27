@@ -25,7 +25,6 @@ public class TotalChargeController {
             TotalCharge savedTotalCharge = totalChargeService.saveTotalCharge(totalCharge);
             return new ResponseEntity<>(savedTotalCharge, HttpStatus.CREATED);
         } catch (Exception e) {
-            // Log the error for debugging purposes
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
